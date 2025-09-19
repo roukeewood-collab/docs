@@ -1,56 +1,153 @@
 ---
-title: "基本介绍"
-description: "Welcome to the new home for your documentation"
+title: "Flum-API - 企业级AI大模型API中转站"
+description: "企业级专业稳定的AI大模型API中转站，支持200+热门AI模型。一个令牌调用OpenAI、Claude、Gemini、DeepSeek、Qwen等所有主流大模型，高性价比、稳定可靠。  "
+sidebarTitle: "基本介绍"
 ---
 
-## Setting up
+<Frame>
+  <img
+    src="/images/api.png"
+    alt=""
+    style={{ borderRadius:"0.5rem" }}
+    title=""
+  />
+</Frame>
 
-Get your documentation site up and running in minutes.
+## **🏢 公司背景**
 
-<Card title="Start here" icon="rocket" horizontal href="/quickstart">
-  Follow our three step quickstart guide.
-</Card>
+- 主体运营公司：FLUM-API, LLC（美国）
+- 官方资源合作：微软Azure、AWS、Google Cloud 官方（额度来源正规，放心使用）
+- 服务保障：
+  - 稳定：提供 OpenAI、Claude、Google Gemini 等主流模型的高并发和稳定服务
+  - 可信：
+    - 已有众多知名应用在生产环境中稳定接入（见 使用场景 栏目）。
+    - 已合作知名高校、医院等单位，已服务知名企业。
 
-## Make it yours
-
-Design a docs site that looks great and empowers your users.
+## **📖 产品基础**
 
 <Columns cols={2}>
-  <Card title="Edit locally" icon="pen-to-square" href="/development">
-    Edit your docs locally and preview them in real time.
+  <Card title="快速开始" icon="rocket" horizontal="false" href="/quickstart" cta="三步完成接入，立即开始使用AI模型">
+    
   </Card>
-  <Card title="Customize your site" icon="palette" href="/essentials/settings">
-    Customize the design and colors of your site to match your brand.
-  </Card>
-  <Card title="Set up navigation" icon="map" href="/essentials/navigation">
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card title="API documentation" icon="terminal" href="/api-reference/introduction">
-    Auto-generate API documentation from OpenAPI specifications.
+  <Card title="API手册" icon="book" horizontal="false" href="/api-manual" cta="完整的接口文档和开发者指南">
+    
   </Card>
 </Columns>
 
-## Create beautiful pages
+## **🚀 为什么选择 Flum-API？**
 
-Everything you need to create world-class documentation.
+### **一个接口，多种模型**
+
+无需为每个 AI 服务单独申请账号和管理 API 密钥。通过 Flum-API，您只需要：
+
+- **一个账号**：管理所有 AI 服务
+- **一个 API 密钥**：访问所有模型
+- **一套接口标准**：兼容 OpenAI API 格式
+
+### **💡 支持的模型**
+
+我们支持业界领先的 AI 模型：
+
+**OpenAI 系列**
+
+- o3 / o3 Pro / o4-mini（最新推理模型）
+- GPT-4.1 / GPT-4.1 Mini / GPT-4.1 Nano
+- GPT-4o / ChatGPT-4o Latest / GPT-4.5
+- GPT-3.5 Turbo
+- DALL·E 3 / GPT-Image-1（高性价比）
+- Whisper
+
+**Anthropic 系列**
+
+- Claude 4 Sonnet / Claude 4 Opus（最新，编程首选）
+- Claude 3.7 Sonnet
+- Claude 3.5 Sonnet
+- Claude 3 Haiku
+
+**Google 系列**
+
+- Gemini 2.5 Pro（2M上下文）
+- Gemini 2.5 Flash（快速响应）
+- Gemini 2.0 Flash
+- Gemini 1.5 Pro
+
+**xAI Grok 系列**
+
+- Grok 4（最新版本）
+- Grok 3 / Grok 3 DeepSearch
+- Grok 3 Mini
+
+**国产模型**
+
+- DeepSeek R1 / V3 / Chat / Coder
+- 通义千问（Qwen Max/Plus/Turbo/2.5）
+
+### **🔧 简单易用**
+
+切换模型就像修改一个参数一样简单：
+
+```python
+# 使用 GPT-4
+response = openai.ChatCompletion.create(
+    model="gpt-4",
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+
+# 切换到 Claude 3
+response = openai.ChatCompletion.create(
+    model="claude-3-opus-20240229",  # 只需修改模型名称
+    messages=[{"role": "user", "content": "Hello!"}]
+)
+```
+
+### **🛡️ 稳定可靠**
+
+- **高可用性**：多节点部署，智能路由
+- **自动降级**：模型不可用时自动切换
+- **负载均衡**：智能分配请求，避免限流
+- **实时监控**：24/7 服务状态监控
+
+### **💰 成本优化**
+
+- **统一计费**：所有模型使用统一余额
+- **透明定价**：清晰的价格体系
+- **用量统计**：详细的使用报告
+- **灵活充值**：支持多种支付方式
+
+## **🎯 核心特色**
+
+### **GPT-4o 图片生成领先服务商**
+
+GPT-4o、Flux生成图片解决方案，日产数万张图片，质量效果惊人。
+
+### **稳定可靠、并发无上限**
+
+我们是AWS、Azure和Google Cloud的官方合作伙伴，高性能基础架构支撑，不限并发，保障多行业生产环境运行。
+
+### **热门、稀缺AI大模型覆盖**
+
+一键连接所有热门AI模型，OpenAI o3、Claude 4、Gemini 2.5 Pro、DeepSeek和Qwen等等，统一格式，一个令牌，随心调用200+大模型。
+
+## **🚀 开始使用**
+
+准备好开始了吗？只需三步即可开始：
 
 <Columns cols={2}>
-  <Card title="Write with MDX" icon="pen-fancy" href="/essentials/markdown">
-    Use MDX to style your docs pages.
+  <Card title="快速开始" icon="rocket" horizontal="false" href="/quickstart" cta="三步完成接入，立即开始使用AI模型">
+    
   </Card>
-  <Card title="Code samples" icon="code" href="/essentials/code">
-    Add sample code to demonstrate how to use your product.
+  <Card title="API手册" icon="book" horizontal="false" href="/api-manual" cta="完整的接口文档和开发者指南">
+    
   </Card>
-  <Card title="Images" icon="image" href="/essentials/images">
-    Display images and other media.
+  <Card title="API手册" icon="book" horizontal="false" href="/api-manual" cta="完整的接口文档和开发者指南">
+    
   </Card>
-  <Card title="Reusable snippets" icon="recycle" href="/essentials/reusable-snippets">
-    Write once and reuse across your docs.
+  <Card title="API手册" icon="book" horizontal="false" href="/api-manual" cta="完整的接口文档和开发者指南">
+    
   </Card>
 </Columns>
 
-## Need inspiration?
 
-<Card title="See complete examples" icon="stars" href="https://mintlify.com/customers">
-  Browse our showcase of exceptional documentation sites.
-</Card>
+**注册即可获得100万Token免费测试额度，约可调用4o-mini模型进行充分测试。**
+
+                                                                                                                                      [**快速开始**](https://docs.apiyi.com/getting-started)** **\>
